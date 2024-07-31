@@ -11,7 +11,7 @@ public class LoginPage_POM {
 		this.driver= driver;
 }
 	
-	private By username = By.id("login-usernmae");
+	private By username = By.id("login-username");
 	private By password = By.id("login-password");
 	private By signButton = By.id("js-login-btn");
 	private By error_message = By.id("js-notification-box-msg");

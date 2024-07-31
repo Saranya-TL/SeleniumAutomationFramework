@@ -2,6 +2,9 @@ package Com.SeleniumFramework.Tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import io.qameta.allure.Description;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
@@ -9,6 +12,7 @@ import pageObjectModel.LoginPage_POM;
 
 public class TestVWOLogin_POM {
 	
+	@Description("TC001")
 	@Test
 	public void testLoginNegativeVWO() {
 		WebDriver driver = new EdgeDriver();
@@ -18,6 +22,7 @@ public class TestVWOLogin_POM {
 		driver.quit();
 	}
 
+	@Description("TC002")
 	@Test
 	public void testLoginNegativeVWO2() {
 		WebDriver driver = new EdgeDriver();
