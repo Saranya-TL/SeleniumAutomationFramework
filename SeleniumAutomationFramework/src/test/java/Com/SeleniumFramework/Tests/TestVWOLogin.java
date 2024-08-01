@@ -4,7 +4,8 @@ package Com.SeleniumFramework.Tests;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 	import org.testng.Assert;
 	import org.testng.annotations.Test;
 
@@ -14,7 +15,7 @@ import io.qameta.allure.Description;
 		@Description("TC001")
 	    @Test
 	    public void testLoginNegativeVWO(){
-	        WebDriver driver = new EdgeDriver();
+	        WebDriver driver = new ChromeDriver();
 	        driver.get("https://app.vwo.com");
 	        System.out.println(driver.getTitle());
 	        Assert.assertEquals(driver.getTitle(), "Login - VWO");
